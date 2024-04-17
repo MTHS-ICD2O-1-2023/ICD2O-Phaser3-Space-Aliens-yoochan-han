@@ -20,13 +20,13 @@ const config = {
   }
 }
   // set BG color
-  backgrounColor: 0x5f6e7a,
+  backgroundColor: 0x5f6e7a,
   scale: {
     mode: Phaser.Scale.FIT,
     //I place it in center of pg
     autoCenter: Phaser.Scale.CENTER_BOTH,
   },
-  
+
 }
 const game = new Phaser.Game(config)
 console.log(game)
