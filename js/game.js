@@ -3,7 +3,7 @@
 //Copyright (c) 2020 Mr. Coxall All rights reserved
 //
 //Created by: Yoochan
-//Created o: Apr 2024
+//Created on: Apr 2024
 //This is the phaser game coiguration file
 
 /**
