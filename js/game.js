@@ -1,4 +1,8 @@
 /* gobal Phaser */
+//import statement
+import SplashScene from "./SplashScene.js"
+//create the new scene
+const splashScene = new SplashScene
 
 //Copyright (c) 2020 Mr. Coxall All rights reserved
 //
@@ -29,4 +33,11 @@ const config = {
 
 }
 const game = new Phaser.Game(config)
-console.log(game)
+//console.log(game)
+
+//load scene
+//Note: remember any "key" is global and CAN NOT be reusesd!
+game.scene.add("splashScene", splashScene)
+
+//the start scene
+game.scene.start("splashScene")
