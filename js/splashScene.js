@@ -20,7 +20,7 @@ class SplashScene extends Phaser.Scene {
    *  @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin().start.()
    */
   init(data) {
-    self.cameras.mainsetBackgroundColor("ffffff")
+    this.cameras.mainsetBackgroundColor("ffffff")
   }
 
   /**
@@ -46,7 +46,7 @@ class SplashScene extends Phaser.Scene {
    *    @param {number} delta - the delta time in MS since the last frame
    */
   update(time, delta) {
-    //pass
+    this.scene.switch("titleScene")
   }
 }
 
