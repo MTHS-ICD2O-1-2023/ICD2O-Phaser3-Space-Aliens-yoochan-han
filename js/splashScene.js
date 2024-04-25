@@ -9,12 +9,12 @@
 /** this class is the Splash Scene */
 
 class SplashScene extends Phaser.Scene {
-  /**this is cinstructor */
+  /**this is constructor */
   constructor() {
     super({key: "splashScene"})
   }
   /**
-   * Can be defined on your won Scenes.
+   * Can be defined on your own Scenes.
    * This method is called by the Scene Manager when the scene starts,
    *    before preload() and create().
    *  @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin().start.()
@@ -31,7 +31,7 @@ class SplashScene extends Phaser.Scene {
     console.log("Splash Scene")
   }
   /**
-   * Cna be defined on your own Scenes.
+   * Can be defined on your own Scenes.
    * Use it to create yuor game objects.
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
@@ -40,10 +40,10 @@ class SplashScene extends Phaser.Scene {
   }
 
   /**
-   * Should be overridden by your won Scenes.
+   * Should be overridden by your own Scenes.
    * this method is called once per game step while the scene the last frame.
    *    @param {number} time - The curre time.
-   *    @param {number} delta - the delta time in MS since the last frame
+   *    @param {number} delta - the delta time in MS since the last frame.
    */
   update(time, delta) {
     this.scene.switch("titleScene")
