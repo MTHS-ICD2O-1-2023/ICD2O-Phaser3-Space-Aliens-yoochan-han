@@ -14,7 +14,7 @@ class TitleScene extends Phaser.Scene {
  * This method is the construtor.
  */
   consructor() {
-    super({ key: "titleScene"})
+    super({ key: "titleScene" })
 
     this.TitleSceneBackgroundImage = null
     this.TitleSceneText = null
@@ -41,7 +41,7 @@ class TitleScene extends Phaser.Scene {
    */
   preload() {
     console.log("Title Scene")
-    this.load.image("titleSceneBackgorund", "assets/aligns_screen_image.jpg")
+    this.load.image("titleSceneBackgorund", "assets/aliens_screen_image.jpg")
   }
   /**
  * Can be defined on your own Scenes.
@@ -56,7 +56,7 @@ create(data) {
   this.TitleSceneBackgroundImage.y = 1080 / 2
 
   this.titlesceneText = this.add
-    .text(1920 / 2, 1080 / 2 + 350, "space Aliens", this.titlesceneTextStyle)
+    .text(1920 / 2, 1080 / 2 + 350, "Space Aliens", this.titlesceneTextStyle)
     .setOrigin(0.5)
 }
   /**
