@@ -15,6 +15,14 @@ class TitleScene extends Phaser.Scene {
  */
   consructor() {
     super({ key: "titleScene"})
+
+    this.TitleSceneBackgroundImage = null
+    this.TitleSceneText = null
+    this.titleSceneTextStyle = {
+      fot: "200px Times",
+      fill: "#fde4b9",
+      align: "center",
+    }
   }
 
   /**
@@ -33,6 +41,7 @@ class TitleScene extends Phaser.Scene {
    */
   preload() {
     console.log("Title Scene")
+    this.load.image("titleSceneBackgorund", "assets/aligns_screen_image.jpg")
   }
   /**
  * Can be defined on your own Scenes.
@@ -40,7 +49,15 @@ class TitleScene extends Phaser.Scene {
  * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
  */
 create(data) {
-  //pass
+  this.titleSceneBcackgroundImage = this.add
+    .sprite(0, 0, "titleSceneBackground")
+    .setScale(2.75)
+  this.TitleSceneBackgroundImage.x = 1920 / 2
+  this.TitleSceneBackgroundImage.y = 1080 / 2
+
+  this.titlesceneText = this.add
+    .text(1920 / 2, 1080 / 2 + 350, "space Aliens", this.titlesceneTextStyle)
+    .setOrigin(0.5)
 }
   /**
    * Should be overridden by your won Scenes.
