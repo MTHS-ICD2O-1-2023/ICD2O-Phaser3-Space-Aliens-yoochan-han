@@ -11,7 +11,7 @@
  */
 class TitleScene extends Phaser.Scene {
 /**
- * This method is the construtor.
+ * This method is the constructor.
  */
   consructor() {
     super({ key: "titleScene" })
@@ -37,7 +37,7 @@ class TitleScene extends Phaser.Scene {
 
   /**
    * Can be defined on your own Scenes.
-   * use it to load asset.
+   * use it to load assets.
    */
   preload() {
     console.log("Title Scene")
@@ -62,7 +62,7 @@ create(data) {
   /**
    * Should be overridden by your won Scenes.
    * this method is called once per game step while the scene the last frame.
-   *    @param {number} time - The curre time.
+   *    @param {number} time - The current time.
    *    @param {number} delta - the delta time in MS since the last frame
    */
   update(time, delta) {
