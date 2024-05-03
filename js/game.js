@@ -26,9 +26,9 @@ const config = {
   height: 1080,
   physics: {
     default: "arcade",
-      arcade: {
-        debug: true,
-  }
+    arcade: {
+      debug: true,
+  },
 },
   // set BG color
   backgroundColor: 0x5f6e7a,
