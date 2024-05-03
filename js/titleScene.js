@@ -13,7 +13,7 @@ class TitleScene extends Phaser.Scene {
 /**
  * This method is the constructor.
  */
-  consructor() {
+  constructor() {
     super({ key: "titleScene" })
 
     this.titleSceneBackgroundImage = null
