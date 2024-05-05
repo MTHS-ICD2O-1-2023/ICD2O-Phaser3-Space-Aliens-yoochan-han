@@ -17,7 +17,7 @@ class GameScene extends Phaser.Scene {
   constructor() {
     super({ key: "gameScene"})
 
-    this.backround = null
+    this.background = null
     this.ship = null
 }
 
@@ -36,7 +36,7 @@ class GameScene extends Phaser.Scene {
  * Use it to load assets.
  */
 preload() {
-  console.log("game Scene")
+  console.log("Game Scene")
 
   this.load.image("starBackground", "./assets/starBackground.png")
   this.load.image("ship", "./assets/spaceShip.png")
@@ -48,7 +48,7 @@ preload() {
    * @param {object} data - Any data passed via ScenePlugin.add() or scenePlugin.start().
    */
   create(data) {
-    this.background = this.add.image(0, 0, "starBackGround").setScale(2.0)
+    this.background = this.add.image(0, 0, "starBackground").setScale(2.0)
     this.background.setOrigin(0, 0)
 
     this.ship = this.physics.add.sprite(1920 / 2, 100, "ship")
