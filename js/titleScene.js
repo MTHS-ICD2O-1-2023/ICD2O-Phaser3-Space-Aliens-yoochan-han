@@ -54,7 +54,7 @@ create(data) {
     .setScale(2.75)
   this.titleSceneBackgroundImage.x = 1920 / 2
   this.titleSceneBackgroundImage.y = 1080 / 2
-
+ 
   this.titleSceneText = this.add
     .text(1920 / 2, 1080 / 2 + 350, "Space Aliens", this.titleSceneTextStyle)
     .setOrigin(0.5)
