@@ -32,7 +32,7 @@ class SplashScene extends Phaser.Scene {
   preload() {
     console.log("Splash Scene")
     this.load.image("spalshSceneBackground", "./assets/splashSceneImage.png")
-  }
+  } 
   /**
    * Can be defined on your own Scenes.
    * Use it to create yuor game objects.
