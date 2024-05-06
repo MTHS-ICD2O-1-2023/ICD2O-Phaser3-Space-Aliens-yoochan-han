@@ -39,7 +39,7 @@ class SplashScene extends Phaser.Scene {
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
   create(data) {
-    this.splashSceneBackgoundImage = this.add.spite(
+    this.splashSceneBackgoundImage = this.add.sprite(
       0,
       0,
       "splachSceneBAckground"
