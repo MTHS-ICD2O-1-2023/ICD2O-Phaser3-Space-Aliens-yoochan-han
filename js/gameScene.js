@@ -78,5 +78,5 @@ preload() {
     }
   }
 }
-
+ 
 export default GameScene
