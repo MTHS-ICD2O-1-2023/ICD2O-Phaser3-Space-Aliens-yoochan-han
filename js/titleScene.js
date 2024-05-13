@@ -66,7 +66,7 @@ create(data) {
    *    @param {number} delta - the delta time in MS since the last frame
    */
   update(time, delta) {
-    if (time > 6000) {
+    if (time > 6000) { 
       this.scene.switch("menuScene")
     }
   }
