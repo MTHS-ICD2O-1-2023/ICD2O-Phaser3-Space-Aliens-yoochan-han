@@ -61,8 +61,8 @@ preload() {
  * @param {number} delta - The delta time in ms since the last frame.
  */  
   update(time, delta) {
-    const keyLeftObj = this.input.keyboard.addKey("LEFT")
-    const keyRightObj = this.input.keyboard.addKey("RIGHT")
+    const keyLeftObj = this.inpu.keyboard.addKey("LEFT")
+    const keyRightObj = this.inpu.keyboard.addKey("RIGHT")
 
     if (keyLeftObj.inDown === true) {
       this.ship.x -= 15
