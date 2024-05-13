@@ -16,7 +16,7 @@ class GameScene extends Phaser.Scene {
    */
   constructor() {
     super({ key: "gameScene"})
-    
+
     this.background = null
     this.ship = null
 }
@@ -61,7 +61,21 @@ preload() {
  * @param {number} delta - The delta time in ms since the last frame.
  */
   update(time, delta) {
-    //pass
+    const keyLeftObj = this.inpu.keyboard.addKey("LEFT")
+    const keyRightObj = this.inpu.keyboard.addKey("RIGHT")
+
+    if (keyLeftObj.inDown === true) {
+      this.ship.x -= 15
+      if (this.ship.x <0) {
+        this.ship.x = 0
+      }
+    }
+    if (keyRightObj.inDown === true) {
+      this.ship.x += 15
+      if (this.ship.x > 1920) {
+        this.ship.x = 1920
+      }
+    }
   }
 }
 
