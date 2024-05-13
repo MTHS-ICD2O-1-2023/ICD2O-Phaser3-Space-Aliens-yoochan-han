@@ -69,7 +69,7 @@ preload() {
       if (this.ship.x <0) {
         this.ship.x = 0
       }
-    }
+    } 
     if (keyRightObj.inDown === true) {
       this.ship.x += 15
       if (this.ship.x > 1920) {
