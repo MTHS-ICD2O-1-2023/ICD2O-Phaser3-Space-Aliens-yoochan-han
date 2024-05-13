@@ -63,7 +63,7 @@ preload() {
   update(time, delta) {
     const keyLeftObj = this.inpu.keyboard.addKey("LEFT")
     const keyRightObj = this.inpu.keyboard.addKey("RIGHT")
-
+    
     if (keyLeftObj.inDown === true) {
       this.ship.x -= 15
       if (this.ship.x <0) {
@@ -77,6 +77,6 @@ preload() {
       }
     }
   }
-} 
+}
 
 export default GameScene
