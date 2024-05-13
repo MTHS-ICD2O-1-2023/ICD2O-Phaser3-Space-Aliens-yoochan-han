@@ -19,6 +19,7 @@ class GameScene extends Phaser.Scene {
 
     this.background = null
     this.ship = null
+    this.fireMissile = false
 }
 
   /**
