@@ -64,13 +64,13 @@ preload() {
     const keyLeftObj = this.input.keyboard.addKey("LEFT")
     const keyRightObj = this.input.keyboard.addKey("RIGHT")
 
-    if (keyLeftObj.inDown === true) {
+    if (keyLeftObj.isDown === true) {
       this.ship.x -= 15
       if (this.ship.x <0) {
         this.ship.x = 0
       }
     }
-    if (keyRightObj.inDown === true) {
+    if (keyRightObj.isDown === true) {
       this.ship.x += 15
       if (this.ship.x > 1920) {
         this.ship.x = 1920
@@ -78,5 +78,5 @@ preload() {
     }
   }
 }
- 
+
 export default GameScene
