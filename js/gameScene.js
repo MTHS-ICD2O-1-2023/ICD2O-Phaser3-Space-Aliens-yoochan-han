@@ -87,11 +87,11 @@ preload() {
     }
     if (keySpaceObj.isDown === true) {
       if (this.fireMissile === false) {
-        //fire missile
-        this.fireMissile = true
-        const aNewMissile = this.physics.add.sprite(this.ship.x, this.ship.y, 'missile')
-        this.missileGroup.add(aNewMissile)
-        this.sound.play('laser')
+          //fire missile
+          this.fireMissile = true
+          const aNewMissile = this.physics.add.sprite(this.ship.x, this.ship.y, 'missile')
+          this.missileGroup.add(aNewMissile)
+          this.sound.play('laser')
         }
       }
 
@@ -99,7 +99,7 @@ preload() {
         this.fireMissile = false
       }
       this.missileGroup.children.each(function (item) {
-        item.y -= 15
+        item.y = item.y - 15
         if (item.y < 0) {
           item.destroy()
         }
