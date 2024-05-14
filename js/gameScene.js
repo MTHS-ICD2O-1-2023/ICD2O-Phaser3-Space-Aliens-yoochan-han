@@ -57,7 +57,6 @@ preload() {
 
     this.ship = this.physics.add.sprite(1920 / 2, 1080 - 100, "ship")
 
-
     //create a group for the missiles
     this.missileGroup = this.physics.add.group()
   }
