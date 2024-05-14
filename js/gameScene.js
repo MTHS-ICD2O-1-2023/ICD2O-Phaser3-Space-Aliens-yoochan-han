@@ -56,7 +56,7 @@ preload() {
   this.load.image("alien", "./assets/alien.png")
   //sound
   this.load.audio('laser', './assets/laser1.wav')
-}
+}                                    
 
   /**
    * Can be defined on your own Scenes.
