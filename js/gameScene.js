@@ -84,9 +84,7 @@ preload() {
       this.sound.play('explosion')
       this.createAlien()
       this.createAlien()
-
-
-    }.bind(thia))
+    }.bind(this))
   }
 
   /**
