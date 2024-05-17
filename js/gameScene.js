@@ -56,6 +56,7 @@ preload() {
   this.load.image("alien", "./assets/alien.png")
   //sound
   this.load.audio('laser', './assets/laser1.wav')
+  this.load.audio('explosion', './assets/BarrelExploding.wav')
 }               
 
   /**
@@ -75,6 +76,17 @@ preload() {
     //create a group for the aliens
     this.alienGroup = this.add.group()
     this.createAlien()
+
+    //collisions between mls and alien
+    this.physics.add.collider(this.missileGroup, this.alienGroup, function(missileCollide, alienCollide) {
+      alienCollide.destroy()
+      missileCollide.destroy()
+      this.sound.play('explosion')
+      this.createAlien()
+      this.createAlien()
+
+
+    }.bind(thia))
   }
 
   /**
