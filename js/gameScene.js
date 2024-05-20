@@ -64,7 +64,7 @@ preload() {
    * Use it ot create your game objects
    * @param {object} data - Any data passed via ScenePlugin.add() or scenePlugin.start().
    */
-  create(data) {
+  create(data) { 
     this.background = this.add.image(0, 0, "starBackground").setScale(2.0)
     this.background.setOrigin(0, 0)
 
