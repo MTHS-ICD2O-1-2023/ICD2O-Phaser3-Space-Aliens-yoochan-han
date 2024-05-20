@@ -56,7 +56,7 @@ preload() {
   this.load.image("alien", "./assets/alien.png")
   //sound
   this.load.audio('laser', './assets/laser1.wav')
-  this.load.audio('explosion', './assets/BarrelExploding.wav')
+  this.load.audio('explosion', './assets/barrelExploding.wav')
 }               
 
   /**
