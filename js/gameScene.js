@@ -94,6 +94,7 @@ preload() {
       this.createAlien()
       this.createAlien()
     }.bind(this))
+
     this.physics.add.collider(this.ship, this.alienGroup, function (shipCollide, alienCollide) {
       this.sound.play('bomb')
       this.physics.pause()
@@ -101,7 +102,7 @@ preload() {
       shipCollide.destroy()
       this.gameOverText = this.add.text(1920 / 2, 1080 / 2, "Game Over! \nclick to play again.", this.scoreTextStyle).setOrigin(0.5)
       this.gameOverText.setInteractive({ useHandCursor: true})
-      this.gameOverText.on('poinerdown', ()=> this.scene.start('gameScene'))
+      this.gameOverText.on('pointerdown', ()=> this.scene.start('gameScene'))
     }.bind(this))
   }
 
