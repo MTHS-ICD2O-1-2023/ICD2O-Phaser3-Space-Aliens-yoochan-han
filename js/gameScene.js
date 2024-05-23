@@ -62,8 +62,8 @@ preload() {
   this.load.audio('laser', './assets/laser1.wav')
   this.load.audio('explosion', './assets/barrelExploding.wav')
   this.load.audio('bomb', './assets/bomb.wav')
-}  
-
+}   
+ 
   /**
    * Can be defined on your own Scenes.
    * Use it ot create your game objects
