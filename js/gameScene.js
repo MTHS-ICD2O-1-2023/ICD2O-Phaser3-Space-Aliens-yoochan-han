@@ -93,7 +93,7 @@ preload() {
       this.scoreText.setText('Score: ' + this.score.toString())
       this.createAlien()
       this.createAlien()
-    }.bind(this))
+    }.bind(this))    
 
     this.physics.add.collider(this.ship, this.alienGroup, function (shipCollide, alienCollide) {
       this.sound.play('bomb')
