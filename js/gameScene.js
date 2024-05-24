@@ -100,7 +100,7 @@ preload() {
       this.physics.pause()
       alienCollide.destroy()
       shipCollide.destroy()
-      this.gameOverText = this.add.text(1920 / 2, 1080 / 2, "Game Over! \nclick to play again.", this.scoreTextStyle).setOrigin(0.5)
+      this.gameOverText = this.add.text(1920 / 2, 1080 / 2, "Game Over! \nclick to play again.", this.gameOverTextStyle).setOrigin(0.5)
       this.gameOverText.setInteractive({ useHandCursor: true})
       this.gameOverText.on('pointerdown', ()=> this.scene.start('gameScene'))
     }.bind(this))
